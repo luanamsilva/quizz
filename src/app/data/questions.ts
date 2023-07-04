@@ -1,6 +1,7 @@
 import { Question } from "../types/Question";
 
-export const questions:Question[] = [{
+export const questions:Question[] = [
+  {
 question: "Como se define um evento de clique em um elemento HTML usando JavaScript?",
   options: [
     ' Atribuindo uma função ao evento "onclick" do elemento desejado',
@@ -10,7 +11,7 @@ question: "Como se define um evento de clique em um elemento HTML usando JavaScr
 
   ],
   answer: 0
+},
 
-}
   
 ]
