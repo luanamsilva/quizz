@@ -4,17 +4,23 @@ import { useState } from 'react'
 
 type Props = {
 question: Question
-onAsnwer: (answer:number)=>void
+onAnswer: (answer:number)=>void
 count:number
 }
 
-export const QuestionItem = ({onAsnwer, question, count}: Props) => {
+export const QuestionItem = ({onAnswer, question, count}: Props) => {
   const [answerSelected, setAnswerSelected] =  useState<number | null>(null)
 
   const handleCheckAnswer = (key:number)=>{
     if(answerSelected === null){
       setAnswerSelected(key)
-      onAsnwer(key)
+
+      setTimeout(()=>{
+        onAnswer(key)
+        setAnswerSelected(null)
+      },2000)
+
+      
     }
 
  
