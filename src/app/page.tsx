@@ -24,6 +24,11 @@ if(questions[currentQuestion+1]){
 setAnswers([...answers, answer])
 nextQuestion()
   }
+  const handleReset = ()=>{
+    setCurrentQuestion(0)
+    setAnswers([])
+    setShowResults(false)
+  }
   return (
 <div className="w-full h-screen flex justify-center items-center text-gray-300 ">
 <div className="w-full max-w-xl rounded-md shadow-zinc-900 ">
@@ -40,7 +45,7 @@ nextQuestion()
 <div className="text-center">
   {!showResults && `${currentQuestion+1} de ${questions.length} pergunta${questions.length === 1? '':'s'}` }
   {showResults && 
-  <button className="px-3 py-2 rounded-md bg-blue-800">Reininciar</button>}
+  <button onClick={handleReset} className="px-3 py-2 rounded-md bg-blue-800">Reininciar</button>}
   </div>
 </div>
 </div>
