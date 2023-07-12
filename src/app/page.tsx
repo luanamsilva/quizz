@@ -25,12 +25,13 @@ setAnswers([...answers, answer])
 nextQuestion()
   }
   return (
-<div className="w-full h-screen flex justify-center items-center text-gray-300">
-<div className="w-full max-w-xl rounded-md bg-cyan-950shadow shadow-zinc-900">
+<div className="w-full h-screen flex justify-center items-center text-gray-300 ">
+<div className="w-full max-w-xl rounded-md shadow-zinc-900 ">
 <h1 className="p-5 text-center text-bold text-cyan-500 text-xl">Quizz JavaScript</h1>
 <div className="p-5">
   {!showResults &&
  <QuestionItem question={questions[currentQuestion]} onAnswer={handlerAnswer} count={currentQuestion+1}/>}
+
 {showResults &&
 <Results questions={questions} answers={answers}/>
 }
