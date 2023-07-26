@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">Quizz JavaScript</h1>
+
+![Screenshot from 2023-07-26 08-42-35](https://github.com/luanamsilva/quizz/assets/83930333/56b6f35f-4d86-47a2-9178-187c9a72a0a2)
+
+
+
 
 ## Getting Started
 
